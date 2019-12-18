@@ -3,7 +3,7 @@ import { Table, Button, ButtonGroup, Modal, Form, Row, Col } from 'react-bootstr
 import axios from 'axios'; // axios is a http request module
 
 export default function UsersTable() {
-	let url = process.env.NODE_ENV === 'development' ? 'http://localhost:5000/api/users' : "https://windows-pwa-express.azurewebsites.net/api/users"
+	let url = process.env.NODE_ENV === 'development' ? 'http://localhost:5000/api/users' : "https://rhg-pwa-admin-interface.azurewebsites.net/api/users"
 
 	const [users, setUsers] = React.useState([]);
 	// modify button modal
